@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* LAYOUT  */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+
+.layout.close {
+  grid-template-columns: 0 1fr;
+}
+
+/* HEADER  */
+.layout_header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.header_nav {
+  background-color: #a4e0ac;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 25px;
+  position: relative;
+}
+
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  color: #f1eded;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* BOTÃO MENU */
+.header-btn {
+  position: absolute;
+  left: 25px;
+
+  background-color: #4b6330;
+  border: none;
+  border-radius: 16px;
+
+  padding: 15px 22px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 28px;
+}
+  /*  MENU / SIDEBAR  */
+  .layout_menu {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background-color: #3f5230;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .menu {
+    background-color: #4b6330;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*  GRUPO DE MENU */
+  .menu-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+
+  }
+
+  .bnts-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu-btn {
+    border-radius: 50px;
+    height: 50px;
+  }
+
+  .menu nav {
+    list-style: none;
+  }
+
+  .menu nav a {
+    background-color: #3f5230;
+    padding: 16px 22px;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* REMOVE LINHA EM QUALQUER ESTADO */
+  .menu nav a:link,
+  .menu nav a:visited,
+  .menu nav a:hover,
+  .menu nav a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* HOVER */
+  .menu nav a:hover {
+    background-color: #5c3b00;
+    transform: translateX(6px);
+  }
+
+  /*CONTEÚDO  */
+  .layout_content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* TABELA */
+  .datatable {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+
+  .datatable th,
+  .datatable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .datatable th {
+    background-color: #0f7e53;
+    color: white;
+  }
+
+  .datatable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /*  LISTA DE LIVROS  */
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /*  BOTÕES GERAIS  */
+  .btn {
+    border: none;
+    background-color: #4b6330;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .btn:hover {
+    background-color: #5c3b00;
+  }
+
+  .btn-create-book,
+  .btn-show-book-list {
+    background-color: #048eaa;
+  }
+
+  .btn-edit-book {
+    background-color: #04aa6d;
+  }
+
+  .btn-delete-book {
+    background-color: #f40808;
+  }
+
+  .btn-show-book {
+    background-color: #2004aa;
+  }
+
+  /*  FORM */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-group {
+    width: 50%;
+  }
+
+  input,
+  textarea {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
