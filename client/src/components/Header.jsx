@@ -9,7 +9,7 @@ function Header({ toggleSidebar }) {
           <GiHamburgerMenu />
         </p>
       </div>
-      <div className="mpm"><h2>MEU APLICATIVO MARAVILHOSO</h2>
+      <div className="mpm"><h2>Livraria da Lú</h2>
       </div>
 
     </header>
